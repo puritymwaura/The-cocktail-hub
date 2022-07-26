@@ -14,6 +14,7 @@ function App() {
     .then(resp=>resp.json())
     .then(data=>{
       setImg(data)
+      console.log(data)
     })
   }, [])
   
