@@ -6,6 +6,7 @@ import DisplayContainer from './DisplayContainer';
 function App() {
   const [search, setSearch] = useState("");
   const [cocktails, setCocktails] = useState([]);
+  const [results, setResults] = useState([]);
 
   useEffect(()=>{
     fetch('https://phase2-cocktail-api.herokuapp.com/drinks')
@@ -19,15 +20,22 @@ function App() {
     })
   }, [])
 
-  useEffect() = {
-    //const search =async () =>{
-     // const {data} =
+  useEffect(() => {
+    if (search?.length) {
+      const results = cocktails.filter((item) => {
+        return !!((item?.drink || '').search(new RegExp(`/${search}/`)));
+
+      });
+  
+      setResults(results);
+    } else {
+      setResults([]);
     }
-    // do the filtering here
-  } [search];
+
+  }, [search]);
   
   
-  const dataDisp = cocktails.map((cocktail, index)=>{
+  const dataDisp = (results?.length ? results : cocktails).map((cocktail, index)=>{
     return (
       <div key={index}>
         <DisplayContainer cocktail={cocktail}/>
@@ -44,6 +52,6 @@ function App() {
       </div>
     </div>
   )
-
+  }
 
 export default App;
