@@ -11,7 +11,7 @@ function App() {
     fetch('https://phase2-cocktail-api.herokuapp.com/drinks')
     .then((resp) => {
       // console.log({resp});
-      return resp.json();
+      return resp.json()
     })
     .then(data=>{
      setCocktails(data)
