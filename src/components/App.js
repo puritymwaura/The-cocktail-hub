@@ -4,32 +4,41 @@ import NavBar from './NavBar';
 import DisplayContainer from './DisplayContainer';
 
 function App() {
-  const [img, setImg] = useState([{
-    drinkThumb: '',
-    drink: '',
-    glass: ''
-  }])
+  const [search, setSearch] = useState("");
+  const [cocktails, setCocktails] = useState([]);
+
   useEffect(()=>{
-    fetch('http://localhost:2000/drinks')
-    .then(resp=>resp.json())
+    fetch('https://phase2-cocktail-api.herokuapp.com/drinks')
+    .then((resp) => {
+      // console.log({resp});
+      return resp.json();
+    })
     .then(data=>{
-      setImg(data)
+     setCocktails(data)
       console.log(data)
     })
   }, [])
+
+  useEffect(() => {
+    // do the filtering here
+  }, [search]);
   
-  const dataDisp = img.map((image, ind)=>{
+  
+  const dataDisp = cocktails.map((cocktail, index)=>{
     return (
-      <div key={ind}>
-        <DisplayContainer image={image}/>
+      <div key={index}>
+        <DisplayContainer cocktail={cocktail}/>
       </div>
     )
   })
 
+
   return (
     <div>
-      <NavBar/>
-      {dataDisp}
+      <NavBar onSearch={(text) => setSearch(text)}/>
+      <div id='data-container'>
+        {dataDisp}
+      </div>
     </div>
   )
 }

@@ -1,59 +1,19 @@
 {
-  "drinks": [
+  "posts": [
     {
-      "alcoholic": "Alcoholic",
-      "drink": "Margarita",
-      "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg",
-      "glass": "Cocktail glass",
-      "imageSource": "https://commons.wikimedia.org/wiki/File:Klassiche_Margarita.jpg",
-      "ingredients": ["Tequila", "Triple sec", "Lime juice", "Salt"],
-      "instructions": "Rub the rim of the glass with the lime slice to make the salt stick to it. Take care to moisten only the outer rim and sprinkle the salt on it. The salt should present to the lips of the imbiber and never mix into the cocktail. Shake the other ingredients with ice, then carefully pour into the glass.",
-      "measures":["any"]
-    },
-    {
-      "alcoholic": "Alcoholic",
-      "drink": "Blue Margarita",
-      "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/bry4qh1582751040.jpg",
-      "glass": "Cocktail glass",
-      "ingredients": ["Tequila", "Blue Curacao", "Lime juice", "Salt"],
-      "instructions": "Rub rim of cocktail glass with lime juice. Dip rim in coarse salt. Shake tequila, blue curacao, and lime juice with ice, strain into the salt-rimmed glass, and serve.",
-      "measures": ["Coarse "]
-    },
-    { 
-      "alcoholic": "Alcoholic",
-      "drink": "Tommy's Margarita",
-      "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/loezxn1504373874.jpg",
-      "glass": "Old-Fashioned glass",  
-      "ingredients": ["Tequila", "Lime Juice", "Agave syrup"],
-      "instructions": "Shake and strain into a chilled cocktail glass.",
-      "measures":["any"]
-    },
-    {
-      "alcoholic": "Alcoholic",
-      "drink": "Whitecap Margarita",
-      "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/srpxxp1441209622.jpg",
-      "glass": "Margarita/Coupette glass",
-      "ingredients": ["Ice", "Tequila", "Cream of coconut", "Lime juice"],
-      "instructions": "Place all ingredients in a blender and blend until smooth. This makes one drink.",
-      "measures": ["3 tblsp fresh "]
-    },
-    {
-      "alcoholic": "Alcoholic",
-      "drink": "Strawberry Margarita",
-      "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/tqyrpw1439905311.jpg",
-      "glass": "Cocktail glass",
-      "ingredients": ["Strawberry schnapps", "Tequila", "Triple sec", "Lemon juice", "Strawberries", "Salt"],
-      "instructions": "Rub rim of cocktail glass with lemon juice and dip rim in salt. Shake schnapps, tequila, triple sec, lemon juice, and strawberries with ice, strain into the salt-rimmed glass, and serve.",
-      "measures": ["1 oz "]
-    },
-    {
-      "alcoholic": "Alcoholic",
-      "drink": "Smashed Watermelon Margarita",
-      "drinkThumb": "https://www.thecocktaildb.com/images/media/drink/dztcv51598717861.jpg",
-      "glass": "Collins glass",
-      "ingredients": ["Watermelon", "Mint", "Grapefruit Juice", "Lime", "Tequila", "Watermelon", "Mint"],
-      "instructions": "In a mason jar muddle the watermelon and 5 mint leaves together into a puree and strain. Next add the grapefruit juice, juice of half a lime and the tequila as well as some ice. Put a lid on the jar and shake. Pour into a glass and add more ice. Garnish with fresh mint and a small slice of watermelon.",
-      "measures": ["Juice of 1/2", "1 shot", "Garnish with", "Garnish with"]
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
     }
-  ]
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }

@@ -1,4 +1,32 @@
+*{
+  background-color: #37aff7;
+}
 img{
-  max-width: 20vw;
-  max-height: 40vh;
+  max-width: 30vw;
+  max-height: 50vh;
+}
+#data-container{
+  max-width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+}
+p{
+  font-size: larger;
+}
+.card{
+  max-width: 400px;
+}
+#header{
+  text-align: center;
+  position: fixed;
+  width: 100vw;
+  /* box-shadow: 0, 2px, 3px #000; */
+}
+#title{
+  font-weight: 1000;
+  font-size: xx-large;
+  letter-spacing: 0.2rem;
 }
