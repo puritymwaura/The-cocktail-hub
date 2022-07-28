@@ -19,9 +19,12 @@ function App() {
     })
   }, [])
 
-  useEffect(() => {
+  useEffect() = {
+    //const search =async () =>{
+     // const {data} =
+    }
     // do the filtering here
-  }, [search]);
+  } [search];
   
   
   const dataDisp = cocktails.map((cocktail, index)=>{
@@ -41,6 +44,6 @@ function App() {
       </div>
     </div>
   )
-}
+
 
 export default App;
